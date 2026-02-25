@@ -1,0 +1,14 @@
+{
+  "name": "shift-bridge-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "better-sqlite3": "^11.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "resend": "^4.1.2"
+  }
+}

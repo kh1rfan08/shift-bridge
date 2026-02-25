@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply min-h-screen;
+  }
+  input, textarea, select {
+    @apply bg-pit-card text-gray-100 border border-pit-border rounded-lg px-4 py-3 w-full focus:outline-none focus:border-pit-accent transition-colors;
+  }
+}

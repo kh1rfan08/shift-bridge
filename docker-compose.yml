@@ -3,6 +3,13 @@ services:
     build: .
     container_name: shift-bridge
     restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+    environment:
+      - JWT_SECRET=${JWT_SECRET}
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      - APP_URL=${APP_URL:-https://shift-bridge.srv1403391.hstgr.cloud}
+      - DB_PATH=/app/data/shift-bridge.db
     labels:
       - traefik.enable=true
       - traefik.http.routers.shift-bridge.rule=Host(`shift-bridge.srv1403391.hstgr.cloud`)
