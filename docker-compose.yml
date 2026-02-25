@@ -1,6 +1,7 @@
 services:
   shift-bridge:
     build: .
+    container_name: shift-bridge
     restart: unless-stopped
     labels:
       - traefik.enable=true
