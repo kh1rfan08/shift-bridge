@@ -1,0 +1,17 @@
+services:
+  shift-bridge:
+    build: .
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.shift-bridge.rule=Host(`shift-bridge.srv1403391.hstgr.cloud`)
+      - traefik.http.routers.shift-bridge.tls=true
+      - traefik.http.routers.shift-bridge.entrypoints=web,websecure
+      - traefik.http.routers.shift-bridge.tls.certresolver=mytlschallenge
+      - traefik.http.services.shift-bridge.loadbalancer.server.port=3000
+    networks:
+      - n8n_default
+
+networks:
+  n8n_default:
+    external: true
