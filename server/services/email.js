@@ -18,7 +18,7 @@ async function sendMagicLink(email, token, code) {
     return;
   }
 
-  await resend.emails.send({
+  const result = await resend.emails.send({
     from: 'ShiftBridge <onboarding@resend.dev>',
     to: email,
     subject: `${code} is your ShiftBridge login code`,
@@ -37,6 +37,7 @@ async function sendMagicLink(email, token, code) {
       </div>
     `,
   });
+  console.log('Resend response:', JSON.stringify(result));
 }
 
 module.exports = { sendMagicLink };
