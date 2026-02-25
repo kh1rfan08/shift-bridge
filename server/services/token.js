@@ -15,4 +15,8 @@ function generateMagicToken() {
   return crypto.randomBytes(32).toString('hex');
 }
 
-module.exports = { signToken, verifyToken, generateMagicToken };
+function generateCode() {
+  return crypto.randomInt(100000, 999999).toString();
+}
+
+module.exports = { signToken, verifyToken, generateMagicToken, generateCode };

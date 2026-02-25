@@ -23,9 +23,16 @@ function initDB() {
   const migrationsDir = path.join(__dirname, 'migrations');
   const files = fs.readdirSync(migrationsDir).filter(f => f.endsWith('.sql')).sort();
 
+  // Track applied migrations
+  database.exec(`CREATE TABLE IF NOT EXISTS _migrations (name TEXT PRIMARY KEY, applied_at TEXT DEFAULT (datetime('now')))`);
+
   for (const file of files) {
+    const already = database.prepare('SELECT 1 FROM _migrations WHERE name = ?').get(file);
+    if (already) continue;
+
     const sql = fs.readFileSync(path.join(migrationsDir, file), 'utf-8');
     database.exec(sql);
+    database.prepare('INSERT INTO _migrations (name) VALUES (?)').run(file);
     console.log(`Migration applied: ${file}`);
   }
 }
