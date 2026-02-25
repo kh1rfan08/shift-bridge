@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git -C:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(node:*)",
+      "Bash(cd:*)",
+      "WebFetch(domain:n8n.srv1403391.hstgr.cloud)",
+      "WebFetch(domain:shift-bridge.srv1403391.hstgr.cloud)",
+      "WebSearch",
+      "mcp__n8n__List_Workflows",
+      "mcp__n8n__Deploy_ShiftBridge",
+      "mcp__n8n__ShiftBridge_Logs",
+      "mcp__n8n__ShiftBridge_Command"
+    ]
+  }
+}
