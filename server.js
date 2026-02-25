@@ -33,7 +33,7 @@ function dashboardPage() {
       width: 80px;
       height: 80px;
       margin: 0 auto 2rem;
-      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      background: linear-gradient(135deg, #0ea5e9, #06b6d4);
       border-radius: 20px;
       display: flex;
       align-items: center;
@@ -126,7 +126,7 @@ function dashboardPage() {
 </head>
 <body>
   <div class="container">
-    <div class="logo">&#9878;</div>
+    <div class="logo">&#9877;</div>
     <h1>Shift Bridge</h1>
     <p class="subtitle">Dashboard — Coming Soon</p>
 
