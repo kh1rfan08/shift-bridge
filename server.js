@@ -128,7 +128,7 @@ function dashboardPage() {
   <div class="container">
     <div class="logo">&#9877;</div>
     <h1>Shift Bridge</h1>
-    <p class="subtitle">Dashboard — Coming Soon</p>
+    <p class="subtitle">Nurse Scheduling — Coming Soon</p>
 
     <div class="status-card">
       <div class="status-row">
