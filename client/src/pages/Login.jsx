@@ -42,7 +42,7 @@ export default function Login() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="email"
-            placeholder="you@email.com"
+            placeholder="your@email.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
             required
