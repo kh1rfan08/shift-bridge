@@ -24,7 +24,7 @@ export default function ThePit() {
 
   return (
     <div className="pb-20">
-      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border">
+      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border safe-top">
         <div className="flex items-center justify-between max-w-lg mx-auto">
           <h1 className="text-xl font-bold">The Pit</h1>
           <div className="flex gap-1 bg-pit-card rounded-lg p-0.5">

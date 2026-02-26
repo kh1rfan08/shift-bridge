@@ -71,7 +71,7 @@ export default function ShiftDetail() {
 
   return (
     <div className="pb-20">
-      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border">
+      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border safe-top">
         <div className="flex items-center gap-3 max-w-lg mx-auto">
           <button onClick={() => navigate(-1)} className="text-gray-400 hover:text-gray-200">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

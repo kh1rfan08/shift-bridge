@@ -42,7 +42,7 @@ export default function PostShift() {
 
   return (
     <div className="pb-20">
-      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border">
+      <header className="sticky top-0 bg-pit-bg/95 backdrop-blur z-10 px-4 py-3 border-b border-pit-border safe-top">
         <h1 className="text-xl font-bold max-w-lg mx-auto">Post a Shift</h1>
       </header>
 
