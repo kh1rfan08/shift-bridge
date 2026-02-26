@@ -19,7 +19,7 @@ async function sendMagicLink(email, token, code) {
   }
 
   const result = await resend.emails.send({
-    from: 'ShiftBridge <onboarding@resend.dev>',
+    from: 'ShiftBridge <login@oddlayer.tech>',
     to: email,
     subject: `${code} is your ShiftBridge login code`,
     html: `
