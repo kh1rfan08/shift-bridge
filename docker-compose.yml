@@ -8,11 +8,11 @@ services:
     environment:
       - JWT_SECRET=${JWT_SECRET}
       - RESEND_API_KEY=${RESEND_API_KEY}
-      - APP_URL=${APP_URL:-https://shift-bridge.srv1403391.hstgr.cloud}
+      - APP_URL=${APP_URL:-https://shift-bridge.oddlayer.tech}
       - DB_PATH=/app/data/shift-bridge.db
     labels:
       - traefik.enable=true
-      - traefik.http.routers.shift-bridge.rule=Host(`shift-bridge.srv1403391.hstgr.cloud`)
+      - traefik.http.routers.shift-bridge.rule=Host(`shift-bridge.oddlayer.tech`)
       - traefik.http.routers.shift-bridge.tls=true
       - traefik.http.routers.shift-bridge.entrypoints=web,websecure
       - traefik.http.routers.shift-bridge.tls.certresolver=mytlschallenge
